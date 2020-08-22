@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Click-jacking",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages vulnerable to click-jacking",
+
+  "icons": {
+  "96": "icons/click-jacking.png"
+},
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["click-jacking.js"]
+    }
+  ]
+
+}
